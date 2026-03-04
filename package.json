@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sinelaw/fresh/main/crates/fresh-editor/plugins/schemas/package.schema.json",
+  "name": "Nix",
+  "version": "0.3.0",
+  "description": "Full Nix language support for Fresh (Syntax, LSP, Formatting)",
+  "type": "language",
+  "author": "kynzo",
+  "license": "MIT",
+  "fresh": {
+    "grammar": {
+      "file": "grammars/nix.sublime-syntax",
+      "extensions": ["nix"]
+    },
+    "language": {
+      "commentPrefix": "#",
+      "blockCommentStart": "/*",
+      "blockCommentEnd": "*/",
+      "tabSize": 2,
+      "useTabs": false,
+      "autoIndent": true,
+      "formatter": {
+        "command": "nixfmt",
+        "args": []
+      }
+    },
+    "lsp": {
+      "command": "nil",
+      "args": [],
+      "autoStart": true
+    }
+  }
+}
