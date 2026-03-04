@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/sinelaw/fresh/main/crates/fresh-editor/plugins/schemas/package.schema.json",
-  "name": "Nix",
+  "name": "nix",
   "version": "0.3.0",
   "description": "Full Nix language support for Fresh (Syntax, LSP, Formatting)",
   "type": "language",
